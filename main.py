@@ -19,8 +19,11 @@ join_message = f"Thanks for inviting me to your discord server! Here are a few t
 
 @client.event
 async def on_ready():
-  print(f"Loaded as {client.user.name} with the prefix {bot_prefix}")
-
+	print('Connected.')
+	print('Name : {}'.format(client.user.name))
+	print('ID : {}'.format(client.user.id))
+	print('Prefix : {}'.format(bot_prefix))
+	print(discord.__version__)
   
 @client.event
 async def on_message(message):
